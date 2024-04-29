@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const SearchBar = ({ onSearch }) => {
@@ -7,11 +6,17 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <input
-      type="text"
-      placeholder="Search transaction"
-      onChange={handleChange}
-    />
+    <div className="input-group mb-3">
+      <input
+        type="text"
+        className="form-control"
+        placeholder="Search transactions..."
+        onChange={handleChange}
+      />
+      <div className="input-group-append">
+        <button className="btn btn-primary" type="button">Search</button>
+      </div>
+    </div>
   );
 };
 

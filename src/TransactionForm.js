@@ -1,5 +1,3 @@
-// src/TransactionForm.js
-
 import React, { useState } from 'react';
 
 const TransactionForm = ({ onAddTransaction }) => {
@@ -72,7 +70,7 @@ const TransactionForm = ({ onAddTransaction }) => {
           />
         </div>
       </div>
-      <button type="submit" className="btn btn-primary mt-3">Add Transaction</button>
+      <button type="submit" className="btn btn-primary mt-3 mb-3">Add Transaction</button>
     </form>
   );
 };
