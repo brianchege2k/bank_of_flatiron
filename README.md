@@ -1,3 +1,6 @@
+## DEPLOYED PAGE
+[Bank of Flatiron](https://brianchege2k.github.io/bank_of_flatiron/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
