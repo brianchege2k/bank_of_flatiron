@@ -33,10 +33,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Bank of Flatiron</h1>
-      <TransactionForm onAddTransaction={handleAddTransaction} />
-      <SearchBar onSearch={handleSearch} />
-      <TransactionTable transactions={filteredTransactions} />
+      <header className="bg-primary text-white text-center py-4">
+        <h1 className="mb-0">Bank of Flatiron</h1>
+      </header>
+      <div className="container">
+        <TransactionForm onAddTransaction={handleAddTransaction} />
+        <SearchBar onSearch={handleSearch} />
+        <TransactionTable transactions={filteredTransactions} />
+      </div>
     </div>
   );
 }

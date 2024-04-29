@@ -1,3 +1,5 @@
+// src/TransactionForm.js
+
 import React, { useState } from 'react';
 
 const TransactionForm = ({ onAddTransaction }) => {
@@ -24,39 +26,53 @@ const TransactionForm = ({ onAddTransaction }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="date"
-        name="date"
-        value={formData.date}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="description"
-        placeholder="Description"
-        value={formData.description}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="category"
-        placeholder="Category"
-        value={formData.category}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="number"
-        name="amount"
-        placeholder="Amount"
-        value={formData.amount}
-        onChange={handleChange}
-        required
-      />
-      <button type="submit">Add Transaction</button>
+    <form onSubmit={handleSubmit} className="mt-4">
+      <div className="row">
+        <div className="col-md-3">
+          <input
+            type="date"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+            className="form-control"
+            required
+          />
+        </div>
+        <div className="col-md-3">
+          <input
+            type="text"
+            name="description"
+            placeholder="Description"
+            value={formData.description}
+            onChange={handleChange}
+            className="form-control"
+            required
+          />
+        </div>
+        <div className="col-md-3">
+          <input
+            type="text"
+            name="category"
+            placeholder="Category"
+            value={formData.category}
+            onChange={handleChange}
+            className="form-control"
+            required
+          />
+        </div>
+        <div className="col-md-3">
+          <input
+            type="number"
+            name="amount"
+            placeholder="Amount"
+            value={formData.amount}
+            onChange={handleChange}
+            className="form-control"
+            required
+          />
+        </div>
+      </div>
+      <button type="submit" className="btn btn-primary mt-3">Add Transaction</button>
     </form>
   );
 };
