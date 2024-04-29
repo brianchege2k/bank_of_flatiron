@@ -18,7 +18,6 @@ function App() {
   }, []);
 
   const handleAddTransaction = formData => {
-    // Generate a unique ID for the new transaction
     const newTransaction = { id: Date.now(), ...formData };
     setTransactions([...transactions, newTransaction]);
     setFilteredTransactions([...filteredTransactions, newTransaction]);
