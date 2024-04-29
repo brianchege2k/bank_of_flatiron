@@ -9,7 +9,7 @@ function App() {
   const [filteredTransactions, setFilteredTransactions] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/transactions')
+    fetch('https://my-json-server.typicode.com/brianchege2k/bank_of_flatiron/transactions')
       .then(response => response.json())
       .then(data => {
         setTransactions(data);
